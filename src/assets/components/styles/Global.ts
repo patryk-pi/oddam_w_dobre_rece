@@ -8,19 +8,27 @@ const GlobalStyles = createGlobalStyle`
     }
 
     * {
-    box-sizing: border-box;
+      box-sizing: border-box;
     }
 
     body {
-
-    color: ${({ theme }) => theme.colors.black};
-    font-family: 'Open Sans', sans-serif;
-    font-size: 1.15em;
-    margin: 0;
+      color: ${({ theme }) => theme.colors.black};
+      font-family: 'Open Sans', sans-serif;
+      font-size: 1.15em;
+      margin: 0;
     }
 
     img {
-    max-width: 100%;
+      max-width: 100%;
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    a {
+      text-decoration: none;
+      color: ${({ theme }) => theme.colors.black}
     }
 `;
 
