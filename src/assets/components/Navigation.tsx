@@ -1,3 +1,6 @@
+import { StyledNavigation, StyledLogin } from "./styles/Navigation.styled";
+import theme from "./styles/Theme";
+
 interface NavigationLink {
     sectionName: string;
     link: string;
@@ -29,7 +32,7 @@ const navigationLinks: NavigationLink[] = [
 const Navigation = () => {
     return (
         <div>
-            <ul>
+            <StyledLogin theme={theme}>
                 <li>
                     <button>Zaloguj</button>
                 </li>
@@ -37,7 +40,7 @@ const Navigation = () => {
                 <li>
                     <button>Załóż konto</button>
                 </li>
-            </ul>
+            </StyledLogin>
             <ul>
                 {navigationLinks.map((el, i) => (
                     <li key={i}>

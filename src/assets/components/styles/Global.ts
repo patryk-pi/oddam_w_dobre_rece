@@ -30,6 +30,12 @@ const GlobalStyles = createGlobalStyle`
       text-decoration: none;
       color: ${({ theme }) => theme.colors.black}
     }
+
+    button {
+      display: inline-block;
+      border: none;
+      background-color: transparent;
+    }
 `;
 
 export default GlobalStyles;
