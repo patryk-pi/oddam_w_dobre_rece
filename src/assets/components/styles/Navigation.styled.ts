@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const StyledNavigation = styled.nav`
-    margin-right: 15rem;
+    margin-right: 12rem;
     display: flex;
     flex-direction: column;
 `;
@@ -21,13 +21,15 @@ export const StyledLogin = styled.ul`
         color: ${({ theme }) => theme.colors.grey};
         font-size: 1.4rem;
         padding: 1rem 0.9rem;
+        cursor: pointer;
     }
 `;
 
 export const StyledLinks = styled.ul`
     display: flex;
-    gap: 3.5rem;
+    gap: 1.5rem;
     font-size: 1.8rem;
+    align-self: flex-end;
 
     li {
         padding: 1rem 2rem;

@@ -5,6 +5,10 @@ const GlobalStyles = createGlobalStyle`
 
     html {
       font-size: 10px;
+
+      @media (max-width: 1720px) {
+        font-size: 9px;
+      }
     }
 
     * {
@@ -35,6 +39,15 @@ const GlobalStyles = createGlobalStyle`
       display: inline-block;
       border: none;
       background-color: transparent;
+    }
+
+    h1,
+    h2, 
+    h3, 
+    h4, 
+    h5,
+    h6 {
+      margin: 0;
     }
 `;
 

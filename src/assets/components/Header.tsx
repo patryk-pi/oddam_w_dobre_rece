@@ -1,3 +1,4 @@
+import Heading from "./Heading";
 import Navigation from "./Navigation";
 import StyledContainer from "./styles/Container.styled";
 import { StyledHeader, StyledImage } from "./styles/Header.styled";
@@ -11,6 +12,9 @@ const Header = () => {
             />
             <StyledContainer>
                 <Navigation />
+                {/* <StyledContainer column={true}> */}
+                <Heading />
+                {/* </StyledContainer> */}
             </StyledContainer>
         </StyledHeader>
     );

@@ -7,6 +7,10 @@ export const StyledHeader = styled.header`
 
 export const StyledImage = styled.img`
     width: auto;
-    height: 90rem;
-    margin-left: -40rem;
+    height: 88rem;
+    margin-left: -45rem;
+
+    @media (max-width: 1720px) {
+        height: 80rem;
+    }
 `;
