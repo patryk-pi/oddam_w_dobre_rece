@@ -1,12 +1,16 @@
-import { StyledNavigation, StyledLogin } from "./styles/Navigation.styled";
+import {
+    StyledNavigation,
+    StyledLogin,
+    StyledLinks,
+} from "./styles/Navigation.styled";
 import theme from "./styles/Theme";
 
-interface NavigationLink {
+interface Link {
     sectionName: string;
     link: string;
 }
 
-const navigationLinks: NavigationLink[] = [
+const navigationLinks: Link[] = [
     {
         sectionName: "Start",
         link: "#start",
@@ -31,24 +35,24 @@ const navigationLinks: NavigationLink[] = [
 
 const Navigation = () => {
     return (
-        <div>
+        <StyledNavigation>
             <StyledLogin theme={theme}>
                 <li>
-                    <button>Zaloguj</button>
+                    <a>Zaloguj</a>
                 </li>
 
                 <li>
-                    <button>Załóż konto</button>
+                    <a>Załóż konto</a>
                 </li>
             </StyledLogin>
-            <ul>
+            <StyledLinks>
                 {navigationLinks.map((el, i) => (
                     <li key={i}>
                         <a href={el.link}>{el.sectionName}</a>
                     </li>
                 ))}
-            </ul>
-        </div>
+            </StyledLinks>
+        </StyledNavigation>
     );
 };
 export default Navigation;
