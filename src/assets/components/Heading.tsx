@@ -1,3 +1,5 @@
+import BigButton from "./BigButton";
+
 import {
     StyledHeading,
     StyledHeadingButtons,
@@ -16,11 +18,8 @@ const Heading = () => {
                 />
                 <StyledHeadingButtons>
                     {/* ROUTES TO BE DEFINED!!! */}
-                    <a href="#">
-                        Oddaj
-                        <br /> rzeczy
-                    </a>
-                    <a href="#">Zorganizuj zbiórkę</a>
+                    <BigButton text="Oddaj rzeczy" link="#" />
+                    <BigButton text="Zorganizuj zbiórkę" link="#" />
                 </StyledHeadingButtons>
             </StyledHeadingContainer>
         </StyledHeading>
