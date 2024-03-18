@@ -1,6 +1,5 @@
 import StatsBox from "./StatsBox";
-import StyledContainer from "./styles/Container.styled";
-import { StyledNumbers, StyledStatsBox } from "./styles/Numbers.styled";
+import { StyledNumbers } from "./styles/Numbers.styled";
 
 interface StatsProps {
     amount: number;
