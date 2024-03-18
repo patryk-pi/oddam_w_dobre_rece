@@ -17,7 +17,7 @@ const statsArray: StatsProps[] = [
     },
     {
         amount: 25,
-        action: "WSPARTYCH ORGANIZACJI",
+        action: "ZORGANIZOWANYCH ZBIÓREK",
     },
 ];
 

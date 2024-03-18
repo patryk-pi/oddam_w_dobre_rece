@@ -5,9 +5,10 @@ export const StyledNumbers = styled.section`
 
     & > div {
         display: flex;
-        width: 150rem;
+        justify-content: space-between;
+        max-width: 150rem;
         margin: 0 auto;
-        gap: 24rem;
+        gap: 10rem;
     }
 `;
 
@@ -18,6 +19,7 @@ export const StyledStatsBox = styled.div`
     justify-content: center;
     color: ${({ theme }) => theme.colors.gold};
     margin: 4.6rem 0 8rem;
+    width: 35rem;
 
     h2 {
         font-size: 9rem;
@@ -35,5 +37,6 @@ export const StyledStatsBox = styled.div`
         font-weight: 300;
         text-align: justify;
         text-align-last: center;
+        line-height: 1.5;
     }
 `;
