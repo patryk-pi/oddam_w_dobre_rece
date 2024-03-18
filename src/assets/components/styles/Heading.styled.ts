@@ -5,12 +5,6 @@ export const StyledHeading = styled.div`
 
     div {
     }
-
-    img {
-        height: 3.3rem;
-        width: 25.3rem;
-        margin-bottom: 6.5rem;
-    }
 `;
 
 export const StyledHeadingContainer = styled.div`
@@ -34,4 +28,5 @@ export const StyledHeadingContainer = styled.div`
 export const StyledHeadingButtons = styled.div`
     display: flex;
     gap: 9.5rem;
+    margin-top: 6.5rem;
 `;

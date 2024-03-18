@@ -3,7 +3,7 @@ import Numbers from "./Numbers";
 const Hero = () => {
     return (
         <div>
-            <Numbers></Numbers>
+            <Numbers />
         </div>
     );
 };

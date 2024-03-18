@@ -1,4 +1,5 @@
 import BigButton from "./BigButton";
+import Decoration from "./Decoration";
 
 import {
     StyledHeading,
@@ -12,10 +13,7 @@ const Heading = () => {
             <StyledHeadingContainer>
                 <h1>Zacznij pomagać!</h1>
                 <h1>Oddaj niechciane rzeczy w zaufane ręce</h1>
-                <img
-                    src="src/assets/images/Decoration@2x.png"
-                    alt="Decoration"
-                />
+                <Decoration />
                 <StyledHeadingButtons>
                     {/* ROUTES TO BE DEFINED!!! */}
                     <BigButton text="Oddaj rzeczy" link="#" />
