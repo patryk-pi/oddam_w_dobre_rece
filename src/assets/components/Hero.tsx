@@ -1,7 +1,12 @@
+import BigButton from "./BigButton";
 import Decoration from "./Decoration";
 import Numbers from "./Numbers";
 import Steps from "./Steps";
-import { StyledHero, StyledHeroHeader } from "./styles/Hero.styled";
+import {
+    StyledButtonContainer,
+    StyledHero,
+    StyledHeroHeader,
+} from "./styles/Hero.styled";
 
 const Hero = () => {
     return (
@@ -12,6 +17,9 @@ const Hero = () => {
                 <Decoration />
             </StyledHeroHeader>
             <Steps />
+            <StyledButtonContainer>
+                <BigButton text="oddaj rzeczy" link="#" />
+            </StyledButtonContainer>
         </StyledHero>
     );
 };

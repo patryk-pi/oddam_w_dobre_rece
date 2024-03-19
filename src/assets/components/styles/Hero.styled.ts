@@ -15,3 +15,9 @@ export const StyledHeroHeader = styled.div`
         margin-bottom: 3.8rem;
     }
 `;
+
+export const StyledButtonContainer = styled.div`
+    margin: 3.5rem 0 8rem;
+    display: flex;
+    justify-content: center;
+`;
