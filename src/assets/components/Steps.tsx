@@ -1,4 +1,4 @@
-import { StyledSteps } from "./styles/Steps.styled";
+import { StyledStep, StyledSteps } from "./styles/Steps.styled";
 
 interface StepProps {
     icon: string;
@@ -30,6 +30,19 @@ const stepsArray: StepProps[] = [
 ];
 
 const Steps = () => {
-    return <StyledSteps>Steps</StyledSteps>;
+    return (
+        <StyledSteps>
+            <div>
+                {stepsArray.map(({ icon, action, description }, index) => (
+                    <StyledStep key={index}>
+                        <img src={`src/assets/images/${icon}`} alt="Icon" />
+                        <h5>{action}</h5>
+                        <span></span>
+                        <p>{description}</p>
+                    </StyledStep>
+                ))}
+            </div>
+        </StyledSteps>
+    );
 };
 export default Steps;
