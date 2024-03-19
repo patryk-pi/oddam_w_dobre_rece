@@ -1,3 +1,4 @@
+import AboutUs from "./assets/components/AboutUs";
 import Header from "./assets/components/Header";
 import Hero from "./assets/components/Hero";
 import GlobalStyles from "./assets/components/styles/Global";
@@ -10,6 +11,7 @@ function App() {
             <GlobalStyles />
             <Header />
             <Hero />
+            <AboutUs />
         </ThemeProvider>
     );
 }
