@@ -1,4 +1,5 @@
 import AboutUs from "./assets/components/AboutUs";
+import Foundations from "./assets/components/Foundations";
 import Header from "./assets/components/Header";
 import Hero from "./assets/components/Hero";
 import GlobalStyles from "./assets/components/styles/Global";
@@ -12,6 +13,7 @@ function App() {
             <Header />
             <Hero />
             <AboutUs />
+            <Foundations />
         </ThemeProvider>
     );
 }
