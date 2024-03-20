@@ -22,8 +22,8 @@ export const StyledAboutUsCard = styled.div`
 
         img {
             position: absolute;
-            right: 12rem;
-            bottom: -16rem;
+            right: 8rem;
+            bottom: -20rem;
             height: auto;
             margin-top: 4rem;
         }
