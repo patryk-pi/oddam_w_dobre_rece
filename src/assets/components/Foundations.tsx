@@ -6,11 +6,6 @@ import {
     StyledOrgListItem,
 } from "./styles/Foundations.styled";
 
-interface OrgItemProps {
-    active?: boolean;
-    onClick: () => void;
-}
-
 const Foundations = () => {
     const [organization, setOrganization] = useState<string>("foundation");
     console.log(organization);
