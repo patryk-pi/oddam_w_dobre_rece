@@ -13,6 +13,11 @@ const orgSchema = new Schema({
         type: [String],
         required: true,
     },
+    orgType: {
+        required: true,
+        type: String,
+        enum: ["charity", "ngo", "local"],
+    },
 });
 
 type Org = InferSchemaType<typeof orgSchema>;

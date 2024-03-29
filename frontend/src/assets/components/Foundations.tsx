@@ -7,7 +7,7 @@ import {
 } from "./styles/Foundations.styled";
 
 const Foundations = () => {
-    const [organization, setOrganization] = useState<string>("foundation");
+    const [organization, setOrganization] = useState<string>("charity");
     console.log(organization);
 
     return (
@@ -16,8 +16,8 @@ const Foundations = () => {
             <Decoration />
             <StyledOrgList>
                 <StyledOrgListItem
-                    active={organization === "foundation"}
-                    onClick={() => setOrganization("foundation")}
+                    active={organization === "charity"}
+                    onClick={() => setOrganization("charity")}
                 >
                     <h4>Fundacjom</h4>
                 </StyledOrgListItem>
