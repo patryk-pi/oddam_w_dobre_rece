@@ -3,11 +3,10 @@
     "version": "1.0.0",
     "description": "Full stack charity  app ",
     "main": "server.js",
-    "type": "module",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
-        "start": "node backend/server.js",
-        "server": "nodemon backend/server.js",
+        "start": "ts-node backend/server.ts",
+        "server": "nodemon --exec ts-node -- backend/server.ts",
         "client": "npm run dev --prefix frontend",
         "dev": "concurrently \"npm run server\" \"npm run client\""
     },
@@ -19,6 +18,7 @@
     "homepage": "https://github.com/patryk-pi/oddam_w_dobre_rece#readme",
     "dependencies": {
         "express": "^4.19.2",
+        "mongodb": "^6.5.0",
         "mongoose": "^8.2.4"
     },
     "devDependencies": {
@@ -27,6 +27,7 @@
         "concurrently": "^8.2.2",
         "dotenv": "^16.4.5",
         "nodemon": "^3.1.0",
+        "ts-node": "^10.9.2",
         "typescript": "^5.4.3"
     }
 }
