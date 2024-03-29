@@ -11,10 +11,6 @@
         "client": "npm run dev --prefix frontend",
         "dev": "concurrently \"npm run server\" \"npm run client\""
     },
-    "repository": {
-        "type": "git",
-        "url": "git+ssh://git@github.com/patryk-pi/oddam_w_dobre_rece.git"
-    },
     "author": "patryk-pi",
     "license": "MIT",
     "bugs": {

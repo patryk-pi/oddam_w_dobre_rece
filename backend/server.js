@@ -1,7 +1,7 @@
 import express from "express";
 import dotenv from "dotenv";
 
-const port = 5005;
+const port = 5006;
 
 const app = express();
 
