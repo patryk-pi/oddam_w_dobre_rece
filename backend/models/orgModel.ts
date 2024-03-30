@@ -10,7 +10,7 @@ const orgSchema = new Schema({
         required: true,
     },
     orgItems: {
-        type: [String],
+        type: String,
         required: true,
     },
     orgType: {
