@@ -4,10 +4,18 @@ import { apiSlice } from "./apiSlice";
 export const orgsApiSlice = apiSlice.injectEndpoints({
     endpoints: (builder) => ({
         getOrgs: builder.query({
-            query: () => ORGS,
+            query: (cursor = "") => ({
+                url: `${ORGS}?cursor=${cursor}`,
+            }),
+            providesTags: ["Orgs"],
+        }),
+        getAllOrgs: builder.query({
+            query: () => ({
+                url: ORGS,
+            }),
             providesTags: ["Orgs"],
         }),
     }),
 });
 
-export const { useGetOrgsQuery } = orgsApiSlice;
+export const { useGetOrgsQuery, useGetAllOrgsQuery } = orgsApiSlice;

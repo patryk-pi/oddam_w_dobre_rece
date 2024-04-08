@@ -5,10 +5,14 @@ import {
     StyledOrgList,
     StyledOrgListItem,
 } from "./styles/Foundations.styled";
+import { useGetOrgsQuery, useGetAllOrgsQuery } from "../slices/orgsApiSlice";
 
 const Foundations = () => {
     const [organization, setOrganization] = useState<string>("charity");
-    console.log(organization);
+    const [cursor, setCursor] = useState<string>("");
+
+    const { data: orgs, error, isLoading } = useGetAllOrgsQuery({});
+    console.log(orgs);
 
     return (
         <StyledFoundations>
@@ -34,6 +38,16 @@ const Foundations = () => {
                     <h4>Lokalnym zbiórkom</h4>
                 </StyledOrgListItem>
             </StyledOrgList>
+            <div>
+                {orgs?.map((org: any) => {
+                    return (
+                        <div key={org._id}>
+                            <h3>{org.orgName}</h3>
+                            <p>{org.orgPurpose}</p>
+                        </div>
+                    );
+                })}
+            </div>
         </StyledFoundations>
     );
 };

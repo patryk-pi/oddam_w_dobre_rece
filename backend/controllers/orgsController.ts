@@ -5,12 +5,15 @@ import { Request, Response } from "express";
 const getOrgs = asyncHandler(async (req: Request, res: Response) => {
     const limit = 3; // Number of results per page
 
-    let cursor = req.query.cursor; // Get the cursor from query parameter
-    if (!cursor) {
-        cursor = ""; // Set default cursor if not provided
-    }
+    // Get the cursor from the request from redux toolkit
 
-    const orgs = await Org.find({ _id: { $gt: cursor } }).limit(limit); // Query for organizations with pagination using cursor
+    let cursor = req.query.cursor;
+    let orgs;
+    if (cursor) {
+        orgs = await Org.find({ _id: { $gt: cursor } }).limit(limit);
+    } else {
+        orgs = await Org.find().limit(limit);
+    }
     res.json(orgs);
 });
 
