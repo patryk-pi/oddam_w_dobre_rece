@@ -1,4 +1,5 @@
 import AboutUs from "./assets/components/AboutUs";
+import ContactForm from "./assets/components/ContactForm";
 import Foundations from "./assets/components/Foundations";
 import Header from "./assets/components/Header";
 import Hero from "./assets/components/Hero";
@@ -14,6 +15,7 @@ function App() {
             <Hero />
             <AboutUs />
             <Foundations />
+            <ContactForm />
         </ThemeProvider>
     );
 }
