@@ -1,5 +1,5 @@
 import AboutUs from "./assets/components/AboutUs";
-import ContactForm from "./assets/components/ContactForm";
+import ContactForm from "./assets/components/ContactSection";
 import Foundations from "./assets/components/Foundations";
 import Header from "./assets/components/Header";
 import Hero from "./assets/components/Hero";
