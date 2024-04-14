@@ -74,5 +74,20 @@ export const StyledContactForm = styled.div`
                 color: rgba(24, 24, 24, 0.2);
             }
         }
+
+        button {
+            margin-top: 4rem;
+            align-self: flex-end;
+            font-size: 1.8rem;
+            padding: 1.3rem 5.2rem;
+            border: 1px solid ${({ theme }) => theme.colors.black};
+            transition: transform 0.3s ease-in;
+            box-shadow: 0 0px 10px 1px rgba(128, 128, 128, 0.2);
+            cursor: pointer;
+
+            &:hover {
+                transform: scale(0.95);
+            }
+        }
     }
 `;
