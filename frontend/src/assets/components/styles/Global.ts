@@ -48,6 +48,17 @@ const GlobalStyles = createGlobalStyle`
     h6 {
       margin: 0;
     }
+
+    input { 
+      border: none;
+    }
+
+    textarea{
+      border: none;
+      width: 100%;
+      background-color: transparent;
+      font-family: Open Sans, sans-serif;
+    }
 `;
 
 export default GlobalStyles;

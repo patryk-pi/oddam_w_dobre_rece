@@ -8,7 +8,8 @@ export const StyledContactForm = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border: 1px solid #3c3c3c;
+    right: 12rem;
+    top: 15rem;
 
     h2 {
         font-size: 3.8rem;
@@ -22,6 +23,7 @@ export const StyledContactForm = styled.div`
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        margin-top: 7.5rem;
 
         & > div {
             display: flex;
@@ -37,8 +39,27 @@ export const StyledContactForm = styled.div`
             }
         }
 
+        input {
+            border-bottom: 1px solid ${({ theme }) => theme.colors.black};
+            font-size: 1.8rem;
+            padding: 0.4rem;
+            background-color: transparent;
+
+            &::placeholder {
+                color: rgba(24, 24, 24, 0.2);
+            }
+        }
+
+        label {
+            margin-bottom: 1.2rem;
+            font-family: "Open Sans", sans-serif;
+            font-size: 1.6rem;
+            font-weight: 600;
+        }
+
         textarea {
             resize: none;
+            background-color: transparent;
         }
     }
 `;
