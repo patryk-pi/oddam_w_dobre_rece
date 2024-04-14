@@ -42,7 +42,7 @@ export const StyledContactForm = styled.div`
         input {
             border-bottom: 1px solid ${({ theme }) => theme.colors.black};
             font-size: 1.8rem;
-            padding: 0.4rem;
+            padding: 0.4rem 0;
             background-color: transparent;
 
             &::placeholder {
@@ -55,11 +55,24 @@ export const StyledContactForm = styled.div`
             font-family: "Open Sans", sans-serif;
             font-size: 1.6rem;
             font-weight: 600;
+            align-self: flex-start;
+        }
+
+        label[for="message"] {
+            margin-left: 2%;
+            margin-top: 2rem;
         }
 
         textarea {
             resize: none;
+            font-size: 1.8rem;
+            padding: 0.4rem 0;
             background-color: transparent;
+            border-bottom: 1px solid ${({ theme }) => theme.colors.black};
+
+            &::placeholder {
+                color: rgba(24, 24, 24, 0.2);
+            }
         }
     }
 `;

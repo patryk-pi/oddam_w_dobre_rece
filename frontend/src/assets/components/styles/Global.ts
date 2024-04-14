@@ -55,7 +55,7 @@ const GlobalStyles = createGlobalStyle`
 
     textarea{
       border: none;
-      width: 100%;
+      width: 96%;
       background-color: transparent;
       font-family: Open Sans, sans-serif;
     }
