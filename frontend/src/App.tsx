@@ -1,5 +1,6 @@
 import AboutUs from "./assets/components/AboutUs";
 import ContactForm from "./assets/components/ContactSection";
+import Footer from "./assets/components/Footer";
 import Foundations from "./assets/components/Foundations";
 import Header from "./assets/components/Header";
 import Hero from "./assets/components/Hero";
@@ -16,6 +17,7 @@ function App() {
             <AboutUs />
             <Foundations />
             <ContactForm />
+            <Footer />
         </ThemeProvider>
     );
 }

@@ -82,7 +82,7 @@ export const StyledContactForm = styled.div`
             padding: 1.3rem 5.2rem;
             border: 1px solid ${({ theme }) => theme.colors.black};
             transition: transform 0.3s ease-in;
-            box-shadow: 0 0px 10px 1px rgba(128, 128, 128, 0.2);
+            box-shadow: 0px 0px 14px 2px rgba(162, 162, 165, 0.3);
             cursor: pointer;
 
             &:hover {
