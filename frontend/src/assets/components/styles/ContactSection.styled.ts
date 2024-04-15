@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const StyledContactSection = styled.section`
-    height: 85rem;
+    height: 104rem;
     width: auto;
     background: url("src/assets/images/Background-Contact-Form.jpg") no-repeat
         top center;
