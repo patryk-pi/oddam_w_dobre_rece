@@ -1,3 +1,4 @@
+import { Outlet } from "react-router-dom";
 import AboutUs from "./assets/components/AboutUs";
 import ContactForm from "./assets/components/ContactSection";
 import Footer from "./assets/components/Footer";
@@ -12,12 +13,8 @@ function App() {
     return (
         <ThemeProvider theme={theme}>
             <GlobalStyles />
-            <Header />
-            <Hero />
-            <AboutUs />
-            <Foundations />
-            <ContactForm />
-            <Footer />
+
+            <Outlet />
         </ThemeProvider>
     );
 }
