@@ -6,6 +6,7 @@ export const StyledAuthHeader = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
     h2 {
         font-size: 4rem;
         margin-bottom: 4rem;

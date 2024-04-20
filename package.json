@@ -25,7 +25,8 @@
         "font-awesome": "^4.7.0",
         "mongodb": "^6.5.0",
         "mongoose": "^8.2.4",
-        "react-icons": "^5.1.0"
+        "react-icons": "^5.1.0",
+        "styled-components": "^6.1.8"
     },
     "devDependencies": {
         "@types/dotenv": "^8.2.0",
