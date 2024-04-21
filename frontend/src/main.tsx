@@ -11,12 +11,14 @@ import {
 } from "react-router-dom";
 import LoginScreen from "./assets/screens/LoginScreen.tsx";
 import MainScreen from "./assets/screens/MainScreen.tsx";
+import SignUpScreen from "./assets/screens/SignUpScreen.tsx";
 
 const router = createBrowserRouter(
     createRoutesFromElements(
         <Route path="/" element={<App />}>
             <Route index={true} element={<MainScreen />} />
             <Route path="/login" element={<LoginScreen />} />
+            <Route path="/signup" element={<SignUpScreen />} />
         </Route>
     )
 );

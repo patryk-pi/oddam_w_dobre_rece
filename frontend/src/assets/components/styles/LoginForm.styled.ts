@@ -13,6 +13,7 @@ export const StyledLoginForm = styled.section`
 
         input {
             background-color: transparent;
+            border-bottom: 1px solid ${({ theme }) => theme.colors.grey};
         }
 
         label {
