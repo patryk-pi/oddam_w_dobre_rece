@@ -38,11 +38,11 @@ const Navigation = () => {
         <StyledNavigation>
             <StyledLogin theme={theme}>
                 <li>
-                    <a>Zaloguj</a>
+                    <a href="/login">Zaloguj</a>
                 </li>
 
                 <li>
-                    <a>Załóż konto</a>
+                    <a href="/signup">Załóż konto</a>
                 </li>
             </StyledLogin>
             <StyledLinks>
