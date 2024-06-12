@@ -4,10 +4,14 @@ const LoginForm = () => {
     return (
         <StyledLoginForm>
             <form>
-                <label htmlFor="email">Email</label>
-                <input type="text" />
-                <label htmlFor="password">Hasło</label>
-                <input type="password" />
+                <div>
+                    <label htmlFor="email">Email</label>
+                    <input type="text" />
+                </div>
+                <div>
+                    <label htmlFor="password">Hasło</label>
+                    <input type="password" />
+                </div>
             </form>
         </StyledLoginForm>
     );

@@ -10,10 +10,18 @@ export const StyledLoginForm = styled.section`
         flex-direction: column;
         justify-content: center;
         padding: 4rem 6.8rem;
+        gap: 3rem;
 
         input {
             background-color: transparent;
             border-bottom: 1px solid ${({ theme }) => theme.colors.grey};
+        }
+
+        div {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 2rem;
         }
 
         label {

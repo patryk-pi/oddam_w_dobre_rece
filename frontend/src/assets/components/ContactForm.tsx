@@ -1,5 +1,4 @@
 import Decoration from "./Decoration";
-import Footer from "./Footer";
 import { StyledContactForm } from "./styles/ContactForm.styled";
 
 const ContactForm = () => {
