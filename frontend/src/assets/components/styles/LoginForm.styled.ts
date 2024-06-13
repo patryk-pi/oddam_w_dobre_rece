@@ -15,17 +15,20 @@ export const StyledLoginForm = styled.section`
         input {
             background-color: transparent;
             border-bottom: 1px solid ${({ theme }) => theme.colors.grey};
+            font-size: 1.6rem;
+            padding: 1rem 0.2rem;
         }
 
         div {
             display: flex;
             flex-direction: column;
             justify-content: center;
-            gap: 2rem;
+            gap: 1rem;
         }
 
         label {
             font-size: 1.6rem;
+            font-weight: 500;
         }
     }
 `;
