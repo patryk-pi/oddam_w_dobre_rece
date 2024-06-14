@@ -12,6 +12,7 @@ import {
 import LoginScreen from "./assets/screens/LoginScreen.tsx";
 import MainScreen from "./assets/screens/MainScreen.tsx";
 import SignUpScreen from "./assets/screens/SignUpScreen.tsx";
+import LogoutScreen from "./assets/screens/LogoutScreen.tsx";
 
 const router = createBrowserRouter(
     createRoutesFromElements(
@@ -19,6 +20,7 @@ const router = createBrowserRouter(
             <Route index={true} element={<MainScreen />} />
             <Route path="/login" element={<LoginScreen />} />
             <Route path="/signup" element={<SignUpScreen />} />
+            <Route path="/logout" element={<LogoutScreen />} />
         </Route>
     )
 );

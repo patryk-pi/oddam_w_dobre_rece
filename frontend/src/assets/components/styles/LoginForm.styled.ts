@@ -57,3 +57,19 @@ export const StyledActionButtons = styled.section`
         border: 1px solid ${({ theme }) => theme.colors.black};
     }
 `;
+
+export const StyledMainPageButton = styled.div`
+    font-size: 1.8rem;
+    font-weight: 300;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5rem;
+
+    a {
+        margin: 0 auto;
+        display: inline-block;
+        padding: 1.3rem 1.8rem;
+        border: 1px solid ${({ theme }) => theme.colors.black};
+    }
+`;

@@ -10,6 +10,8 @@ export const StyledAuthHeader = styled.div`
     h2 {
         font-size: 4rem;
         margin-bottom: 4rem;
-        font-weight: 300;
+        font-weight: 400;
+        width: 45rem;
+        text-align: center;
     }
 `;
