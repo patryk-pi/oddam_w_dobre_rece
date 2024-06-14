@@ -5,12 +5,20 @@ export const StyledLoginForm = styled.section`
     width: 39rem;
 
     form {
-        background-color: ${({ theme }) => theme.colors.white};
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        padding: 4rem 6.8rem;
-        gap: 3rem;
+        align-items: center;
+
+        main {
+            background-color: ${({ theme }) => theme.colors.white};
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 4rem 6.8rem;
+            gap: 3rem;
+            flex-shrink: 0;
+            width: 100%;
+        }
 
         input {
             background-color: transparent;
@@ -30,5 +38,22 @@ export const StyledLoginForm = styled.section`
             font-size: 1.6rem;
             font-weight: 500;
         }
+    }
+`;
+
+export const StyledActionButtons = styled.section`
+    margin-top: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 120%;
+    font-size: 1.8rem;
+    font-weight: 300;
+
+    button {
+        font-size: 1.8rem;
+        font-weight: 300;
+        padding: 1.3rem 1.6rem;
+        border: 1px solid ${({ theme }) => theme.colors.black};
     }
 `;

@@ -21,6 +21,11 @@ const GlobalStyles = createGlobalStyle`
       margin: 0;
     }
 
+    button {
+      color: ${({ theme }) => theme.colors.black};
+      font-family: Open Sans, sans-serif;
+    }
+
     img {
       max-width: 100%;
     }
