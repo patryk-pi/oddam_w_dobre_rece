@@ -1,9 +1,6 @@
 import AuthHeader from "../components/AuthHeader";
 import Navigation from "../components/Navigation";
-import {
-    StyledActionButtons,
-    StyledMainPageButton,
-} from "../components/styles/LoginForm.styled";
+import { StyledMainPageButton } from "../components/styles/LoginForm.styled";
 
 const LogoutScreen = () => {
     return (
