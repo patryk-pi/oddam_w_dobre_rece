@@ -1,4 +1,5 @@
 import mongoose, { Schema, InferSchemaType } from "mongoose";
+import bcrypt from "bcrypt";
 
 const userSchema = new Schema(
     {
@@ -11,6 +12,10 @@ const userSchema = new Schema(
         timestamps: true,
     }
 );
+
+userSchema.methods.matchPassword = async function (enteredPassword) {
+    return await bcrypt.compare(enteredPassword, this.password);
+};
 
 type User = InferSchemaType<typeof userSchema>;
 
